@@ -1,34 +1,22 @@
----
-title: Template
-author: Zuletzt bearbeitet von Alexander Bazo
-documentclass: scrartcl
-classoption:
-  - a4paper
-header-includes: |
-    \usepackage{german} 
-    \usepackage[a4paper,left=2.5cm, right=2.5cm,top=2.5cm, bottom=3cm]{geometry}
-    \usepackage{fancyhdr}
-    \usepackage{graphicx}
-    \pagestyle{fancy}
-    \fancyhf{}
-    \rhead{OOP WS 2020/21}
-    \lhead{U00 | Template}
-    \cfoot{\includegraphics[height=2cm]{docs/footer.png}}
-    \fancypagestyle{plain}{
-      \fancyhf{}
-      \rhead{OOP WS 2020/21}
-      \lhead{U00 | Template}
-      \cfoot[C]{\includegraphics[height=2cm]{docs/footer.png}}}
----
+# U11 | Refactoring mit Methoden
 
+| Das Target aus der letzten Übung |
+|:----:|
+| ![Target](./docs/target.png) |
 
-# Template für Übungsaufgaben 
+Im Starterprojekt für dieses Übungsblatt finden Sie einen Lösungsvorschlag
+für das Target-Programm aus der letzten Übung. Bauen Sie den Code so um,
+dass er leichter verständlich, modularer und besser wartbarer wird:
 
-## Wichtige Informationen zur Bearbeitung der Aufgabe 
- - [Link zu wichtiger Ressource](https://www.uni-regensburg.de/sprache-literatur-kultur/medieninformatik/)
+1.  Ergänzen Sie die Methode `getRingColor`, die eine Ganzzahl erwartet
+    und eine Ringfarbe zurückgibt. Die zurückgegebene Ringfarbe ist
+    davon abhängig, ob die übergebene Zahl gerade oder ungerade ist.
 
-## Starterpaket
+2.  Ergänzen Sie die Methode `drawRing`, die den Ring mit der
+    übergebenen Farbe und dem übergebenen Radius zeichnet.
 
-Ein vorbereitetes Starterpaket zur selbständigen Implementierung der Aufgabe finden Sie [hier](https://github.com/OOP-Ubungen-WS2020-21/U00-Template-fuer-Aufgaben/archive/Starterpaket.zip).
+Passen Sie die `for`-Schleife innerhalb der `drawDartTarget`-Methode an,
+indem Sie den vorhandenen Code durch die neu implementierten Methoden
+ersetzen. Testen Sie, ob Ihr neu strukturiertes Programm immer noch
+korrekt läuft.
 
-## Text
